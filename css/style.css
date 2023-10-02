@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;    
+    background: url("../res/digital-art-selected_662214-75277.avif");
+    background-size: contain;
+    
+}
+.content{
+    position: absolute;
+    left: 353px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24rem;
+    width: 31rem;
+    background-color: black;
+    opacity: 75%;
+}
+.items h1{
+    color: darkgreen;
+    font-size: 3rem;    
+}
+.contact{
+    bottom: 20px;
+    right: 0px;
+    position: absolute;
+    left: 853px;
+}
+.contact p{
+    color: white;
+}
