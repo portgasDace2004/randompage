@@ -20,32 +20,36 @@
 </div>
 <script>
     // Function to copy text to clipboard
-    function copyToClipboard() {
-        var textToCopy = "Go To Room C6-515";
+   // Function to copy text to clipboard
+function copyToClipboard() {
+    var textToCopy = "Go To Room C6-515";
 
-        // Create a temporary input element and set its value
-        var tempInput = document.createElement("input");
-        tempInput.value = textToCopy;
+    // Create a temporary input element and set its value
+    var tempInput = document.createElement("input");
+    tempInput.value = textToCopy;
 
-        // Append the input element to the document
-        document.body.appendChild(tempInput);
+    // Append the input element to the document
+    document.body.appendChild(tempInput);
 
-        // Select the text inside the input element
-        tempInput.select();
+    // Select the text inside the input element
+    tempInput.select();
 
-        // Copy the selected text to the clipboard
-        document.execCommand("copy");
+    // Copy the selected text to the clipboard
+    document.execCommand("copy");
 
-        // Remove the temporary input element
-        document.body.removeChild(tempInput);
+    // Remove the temporary input element
+    document.body.removeChild(tempInput);
 
-        // Alert the user that the text has been copied (you can use other methods to provide feedback)
-        alert("Text copied to clipboard: " + textToCopy);
-    }
+    // Alert the user that the text has been copied (you can use other methods to provide feedback)
+    alert("Text copied to clipboard: " + textToCopy);
 
-    // Add a click event listener to the button
-    var copyButton = document.getElementById("copyButton");
-    copyButton.addEventListener("click", copyToClipboard);
+    // Redirect the user to the desired website
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Replace with the URL you want to redirect to
+}
+
+// Add a click event listener to the button
+var copyButton = document.getElementById("copyButton");
+copyButton.addEventListener("click", copyToClipboard);
 </script>
 
 </body>
